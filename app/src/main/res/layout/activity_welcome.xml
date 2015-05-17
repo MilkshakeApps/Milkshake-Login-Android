@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:src="@drawable/logo"
+        android:layout_above="@id/title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your complete mobile app solution"
+        android:id="@+id/title"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:text="Register"
+            android:id="@+id/signupButton"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/primary_button"
+            style="@style/button_style" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:text="Log in"
+            android:id="@+id/loginButton"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/secondary_button"
+            style="@style/button_style" />
+    </LinearLayout>
+</RelativeLayout>

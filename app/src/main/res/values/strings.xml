@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Milkshake</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="parse_app_id">YOUR APP ID HERE</string>
+    <string name="parse_secret_key">YOUR SECRET HERE</string>
+    <string name="facebook_app_id">YOUR APP ID HERE</string>
+    <string name="action_settings">Settings</string>
+</resources>

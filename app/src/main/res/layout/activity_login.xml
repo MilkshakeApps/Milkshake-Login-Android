@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot password?"
+        android:id="@+id/forgotPassword"
+        android:layout_gravity="right"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:text="Log in with Facebook"
+        android:id="@+id/facebookLogin"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/layer_fb_button"
+        style="@style/button_style"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textbox_height"
+            android:background="#FFF">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/emailLabel"
+                android:text="Email"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/email"
+                android:layout_gravity="center_horizontal"
+                android:background="#00000000">
+
+                <requestFocus></requestFocus>
+            </EditText>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textbox_height"
+            android:background="#FFF">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/passwordLabel"
+                android:text="Password"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                />
+
+            <EditText
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:id="@+id/password"
+                android:layout_toRightOf="@id/passwordLabel"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:background="#00000000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/passwordToggle"
+                android:text="HIDE"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@id/password"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="Log in"
+            android:id="@+id/loginButton"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/primary_button"
+            style="@style/button_style"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message"
+        android:text="Your password was incorrect.  Please try again"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:background="#FAD4CD"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleLarge"
+        android:id="@+id/loading"
+        android:layout_gravity="center_horizontal|bottom"
+        android:visibility="gone"
+        />
+</LinearLayout>
